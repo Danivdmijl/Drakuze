@@ -25,12 +25,12 @@ catchButton.onclick = function(){
         let catchNumber = Math.floor(Math.random() * 2);
         if(catchNumber === 0){
             pokemonText.innerText = "Pokemon Fled!"
-            setTimeout(reloadPage, 2000);
+            setTimeout(reloadPage, 1200);
         }
     
         else{
             pokemonText.innerText = "Pokemon Caught!"
-            setTimeout(reloadPage, 2000);
+            setTimeout(reloadPage, 1200);
         }
         pokemonGamePlayed = true
     }

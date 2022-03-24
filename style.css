@@ -10,6 +10,7 @@ html{
 
 body{
     font-size: 2rem;
+    background: #4b4777;
 }
 
 .cards{
@@ -25,4 +26,21 @@ body{
     height: 40rem;
     border: 0.5rem solid black;
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    background: #5e5997;
+}
+
+#js--pokemon-image{
+    width: 20rem;
+    height: 20rem;
+}
+
+#js--catch-button{
+    width: 12rem;
+    height: 5rem;
+    background: #9c95ff;
 }
