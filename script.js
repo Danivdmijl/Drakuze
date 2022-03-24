@@ -27,25 +27,20 @@ catchButton.onclick = function(){
     if(pokemonGamePlayed === false){
         let catchNumber = Math.floor(Math.random() * 2);
         if(catchNumber === 0){
-            pokemonText.innerText = "Pokemon Fled!"
-            randomNumber = Math.floor(Math.random() * 897 + 1);
-            console.log(randomNumber);
-            fetch("https://pokeapi.co/api/v2/pokemon/" + randomNumber)
-            .then(function(response){
-                return response.json();
-            })
-            .then(function(realData){
-                console.log(realData);
-                pokemonName = realData.name;
-                pokemonText.innerText = "A wild " + pokemonName + " has appeared";
-                pokemonImage.src = realData.sprites.front_default;
-                setTimeout(nieuwepokemon, 750);
-            });            
+            pokemonText.innerText = "Pokemon Fled!"   
+            setTimeout(idkwtfditeigword, 2500); 
         }
     
         else{
             pokemonText.innerText = "Pokemon Caught!"
-            randomNumber = Math.floor(Math.random() * 897 + 1);
+            setTimeout(idkwtfditeigword, 2500);
+        }
+        pokemonGamePlayed = true
+    }
+}
+
+function idkwtfditeigword(){
+    randomNumber = Math.floor(Math.random() * 897 + 1);
             console.log(randomNumber);
             fetch("https://pokeapi.co/api/v2/pokemon/" + randomNumber)
             .then(function(response){
@@ -53,14 +48,11 @@ catchButton.onclick = function(){
             })
             .then(function(realData){
                 console.log(realData);
+                pokemonImage.src = realData.sprites.front_default;
                 pokemonName = realData.name;
                 pokemonText.innerText = "A wild " + pokemonName + " has appeared";
-                pokemonImage.src = realData.sprites.front_default;
                 setTimeout(nieuwepokemon, 750);
-            });  
-        }
-        pokemonGamePlayed = true
-    }
+            });        
 }
 
 function nieuwepokemon(){
