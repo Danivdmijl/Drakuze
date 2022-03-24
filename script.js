@@ -10,12 +10,16 @@ let pokemon = fetch("https://pokeapi.co/api/v2/pokemon/" + randomNumber)
 })
 .then(function(realData){
     console.log(realData);
+    pokemonName = realData.name;
+    pokemonText.innerText = "A wild " + pokemonName + " has appeared";
     pokemonImage.src = realData.sprites.front_default;
 });
 
 
 const catchButton = document.getElementById("js--catch-button");
 const pokemonText = document.getElementById("js--pokemon-text");
+let pokemonName = "";
+
 let pokemonGamePlayed = false;
 
 
@@ -32,6 +36,8 @@ catchButton.onclick = function(){
             })
             .then(function(realData){
                 console.log(realData);
+                pokemonName = realData.name;
+                pokemonText.innerText = "A wild " + pokemonName + " has appeared";
                 pokemonImage.src = realData.sprites.front_default;
                 setTimeout(nieuwepokemon, 750);
             });            
@@ -47,6 +53,8 @@ catchButton.onclick = function(){
             })
             .then(function(realData){
                 console.log(realData);
+                pokemonName = realData.name;
+                pokemonText.innerText = "A wild " + pokemonName + " has appeared";
                 pokemonImage.src = realData.sprites.front_default;
                 setTimeout(nieuwepokemon, 750);
             });  
@@ -56,6 +64,5 @@ catchButton.onclick = function(){
 }
 
 function nieuwepokemon(){
-    pokemonText.innerText = "A wild Pokemon appeared!"
     pokemonGamePlayed = false
 }
