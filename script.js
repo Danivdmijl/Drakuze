@@ -55,6 +55,17 @@ function idkwtfditeigword(){
             });        
 }
 
+
+const runButton = document.getElementById("js--run-button");
+console.log(runButton);
+
+runButton.onclick = function () {
+    idkwtfditeigword();     
+}
+
+
+
+
 function nieuwepokemon(){
     pokemonGamePlayed = false
 }

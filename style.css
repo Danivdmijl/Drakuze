@@ -32,6 +32,7 @@ body{
     flex-direction: column;    
     flex-wrap: wrap;
     background: #5e5997;
+    gap: 0.8rem;
 }
 
 #js--pokemon-image{
@@ -39,8 +40,9 @@ body{
     height: 20rem;
 }
 
-#js--catch-button{
+#js--catch-button, #js--run-button{
     width: 12rem;
     height: 5rem;
     background: #9c95ff;
 }
+
