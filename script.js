@@ -66,8 +66,9 @@ runButton.onclick = function () {
         setTimeout(catchButton, 1750); 
     }
 
-    else{
-        idkwtfditeigword();        
+    else {
+        pokemonText.innerText = "You runned away!"
+        setTimeout(idkwtfditeigword, 1750);        
     }
 }
 
