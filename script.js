@@ -60,7 +60,15 @@ const runButton = document.getElementById("js--run-button");
 console.log(runButton);
 
 runButton.onclick = function () {
-    idkwtfditeigword();     
+    let runNumber = Math.floor(Math.random() * 3);
+    if(runNumber === 0){
+        pokemonText.innerText = "You cant run!"   
+        setTimeout(catchButton, 1750); 
+    }
+
+    else{
+        idkwtfditeigword();        
+    }
 }
 
 
