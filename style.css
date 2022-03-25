@@ -13,6 +13,10 @@ body{
     background: #4b4777;
 }
 
+h2{
+
+}
+
 .cards{
     min-height: 100vh;
     display: flex;
@@ -22,8 +26,8 @@ body{
 
 
 .card{
-    width: 40rem;
-    height: 40rem;
+    width: 50rem;
+    height: 50rem;
     border: 0.5rem solid black;
     list-style: none;
     display: flex;
