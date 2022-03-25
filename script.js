@@ -22,6 +22,10 @@ let pokemonName = "";
 
 let pokemonGamePlayed = false;
 
+const caughtCountertext = document.getElementById("js--caught-counter");
+let caughtCounter = 0;
+caughtCountertext.innerText = "Pokemon Caught: " + caughtCounter;
+
 
 catchButton.onclick = function(){
     if(pokemonGamePlayed === false){
@@ -33,6 +37,9 @@ catchButton.onclick = function(){
     
         else{
             pokemonText.innerText = "Pokemon Caught!"
+            caughtCounter
+            caughtCounter++;
+            caughtCountertext.innerText = "Pokemon Caught: " + caughtCounter;
             setTimeout(idkwtfditeigword, 1750);
         }
         pokemonGamePlayed = true
